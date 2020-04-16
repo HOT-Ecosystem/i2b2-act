@@ -1,4 +1,4 @@
-# i2b2
+# i2b2 and ACT setup
 
 To set up i2b2 with docker, use the docker-compose.yml file from [GitHub - waghsk/i2b2-quickstart: Quick automated installation of i2b2 in VMs, Amazon-Web-Service and Docker](https://github.com/waghsk/i2b2-quickstart)
 
@@ -34,7 +34,7 @@ ACT Data can be found on the [ACT network wiki](https://dbmi-pitt.github.io/ACT-
 
 Download the data from the [box repository](https://pitt.app.box.com/s/qoj5afssw4oz3v27ipmfidhitmgya9nt)
 
-They're stored in the `data` directory
+They're stored in the `data` directory.
 
 ### Create ACT Tables
 
@@ -67,4 +67,8 @@ A few things we noticed during data load.
 
 * There are no data to load into NCATS_* tables in the DDL. Therefore, the rows in table_access for the NCATS_* tables are commented out.
 * There are many errors in the OntologyInstallationInstructionsV2_0_1_Mar172019.docx file in the [Installation Instructions](https://pitt.app.box.com/s/jf2mupczvclzzxtmfvdd6pn1bytg1z1v). Using the DDL files in this repo is easier approach than the steps provided in that in the document.
-* The two files `insert_metadata_act_schemes_oracle_v201.sql` and `insert_metadata_act_table_access_oracle_v201.sql` from the ACT repository contain rows that already exist in the i2b2 database in the docker container. Use the two modified scripts in `postgres` directory instead. What's also commented out in the script is the rows for the NCATS_* tables. 
+* The two files `insert_metadata_act_schemes_oracle_v201.sql` and `insert_metadata_act_table_access_oracle_v201.sql` from the ACT repository contain rows that already exist in the i2b2 database in the docker container. Use the two modified scripts in `postgres` directory instead. What's also commented out in the script is the rows for the NCATS_* tables.
+
+### ACT COVID-19 Ontology
+
+The ACT COVID-19 ontology is [GitHub - shyamvis/covid-phenotyping: Computable phenotypeing for Covid-19](https://github.com/shyamvis/covid-phenotyping). The live demo with the act ontology is at [i2b2 Web Client](http://dbmi-ncats-test01.dbmi.pitt.edu/webclient/)
