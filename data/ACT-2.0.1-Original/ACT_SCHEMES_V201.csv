@@ -1,0 +1,24 @@
+C_KEY,C_NAME,C_DESCRIPTION
+NDC:,NDC,National Drug Code
+DSG-NLP:,DSG-NLP,Natural Language Processing Data
+UMLS:,UMLS,United Medical Language System
+ICD9CM:,ICD9CM,ICD9 code for diagnoses and procedures
+ICD10CM:,ICD10CM,ICD10 code for diagnoses
+LOINC:,LOINC,Lab codes
+DEM|AGE:,DEM|AGE,Age of patient from demographics data
+DEM|DATE:,DEM|DATE,Patient date of birth from demographics data
+DEM|MARITAL:,DEM|MARITAL,Marital Status of patient
+DEM|LANGUAGE:,DEM|LANGUAGE,Primary language spoken by patient
+DEM|RACE:,DEM|RACE,Race of patient
+DEM|RELIGION:,DEM|RELIGION,Religion of patient
+DEM|SEX:,DEM|SEX,Gender of patient
+DEM|VITAL STATUS:,DEM|VITAL STATUS,Vital status of patient
+DEM|ZIPCODE:,DEM|ZIPCODE,
+(null),None,No scheme
+RXNORM:,RXNORM,RxNorm
+DEM|HISP:,DEM|HISP,Hispanic origins
+NUI:,NDF-RT,NDF-RT VA Drug Classification
+ICD9PROC:,ICD9PROC,ICD9 code for procedures
+ICD10PCS:,ICD10PCS,ICD10 code for procedures
+CPT4:,CPT,Current Procedural Terminology
+HCPCS:,HCPCS,Healthcare Common Procedure Coding System
